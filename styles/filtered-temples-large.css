@@ -1,0 +1,24 @@
+@media (min-width:600px){
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav ul {
+        display: flex;
+    
+    }
+    
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    .hamburger {
+        display: none;
+    }
+    .temple-gallery {
+    
+        max-width: 1000px;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

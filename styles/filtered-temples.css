@@ -1,0 +1,138 @@
+:root {
+
+    --primary-bg-color: #f4f4f4;
+    --primary-text-color: black;
+    --header-bg-color: rgb(116, 205, 208);
+    --hover-bg-color: black;
+    --hover-text-color: #fff;
+    --card-bg-color: rgba(145, 148, 148, 0.179);
+
+
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+
+    --font-family: 'Roboto', sans-serif;
+    --line-height: 1.6;
+    --gap-size: 3em;
+    --padding-size: 1em;
+    --padding: 5px;
+    --max-width: 1000px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+    margin-bottom: 1em;
+    background-color: var(--header-bg-color);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: var(--primary-text-color);
+    padding: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--hover-text-color);
+}
+
+/* Main content */
+main {
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    height: 100hv;
+    min-height: 100vh; 
+}
+
+.temple-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--gap-size);
+    padding: var(--padding-size);
+}
+
+.temple-gallery section {
+    text-align: center;
+    background-color: var(--card-bg-color);
+    box-shadow: var(--card-shadow);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: var(--padding);
+}
+
+.temple-gallery section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.temple-gallery section img {
+    width: 90%;
+    height: auto;
+
+    box-shadow: var(--card-shadow);
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: var(--header-bg-color);
+    color: var(--primary-text-color);
+}
+
+/* hamburguer menu*/
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+nav ul {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+}
+
+nav ul.open {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--header-bg-color);
+}
