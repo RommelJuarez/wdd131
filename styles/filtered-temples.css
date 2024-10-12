@@ -68,7 +68,7 @@ main {
     align-items: center;
     margin: 0 auto;
     height: var(--vh);
-    min-height: var(--vh);
+    
 }
 
 .temple-gallery {
