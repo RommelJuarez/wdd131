@@ -16,62 +16,55 @@
 </head>
 <body>
     <header>
-        <h1>Product Review</h1>
+        <h1>Product Review Form</h1>
     </header>
-
     <main>
-        <form action="review.html" method="get">
-            
-            <label for="product">Product Name:</label>
+        <form method="get" action="review.html">
+            <label for="product">Product Name</label>
             <select id="product" name="product" required>
                 <option value="" disabled selected>Select a Product ...</option>
+                <!-- Las opciones se generarán dinámicamente aquí -->
             </select>
 
-            
-            <label for="rating">Overall Rating:</label>
+            <label>Overall Rating</label>
             <div id="rating">
-                <label><input type="radio" name="rating" value="1" required> ☆</label>
-                <label><input type="radio" name="rating" value="2"> ☆☆</label>
-                <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-                <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-                <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">☆</label>
+                <input type="radio" id="star2" name="rating" value="2" required>
+                <label for="star2">☆</label>
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3">☆</label>
+                <input type="radio" id="star4" name="rating" value="4" required>
+                <label for="star4">☆</label>
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">☆</label>
             </div>
 
-            
-            <label for="installation-date">Date of Installation:</label>
+            <label for="installation-date">Date of Installation</label>
             <input type="date" id="installation-date" name="installation-date" required>
 
-            
-            <label for="features">Useful Features (Check all that apply):</label>
+            <label>Useful Features</label>
             <div id="features">
                 <input type="checkbox" id="feature1" name="features" value="Feature 1">
-                <label for="feature1">Durability</label><br>
-                
+                <label for="feature1">Feature 1</label>
                 <input type="checkbox" id="feature2" name="features" value="Feature 2">
-                <label for="feature2">Ease of Use</label><br>
-                
+                <label for="feature2">Feature 2</label>
                 <input type="checkbox" id="feature3" name="features" value="Feature 3">
-                <label for="feature3">Performance</label><br>
-                <input type="checkbox" id="feature4" name="features" value="Feature 4">
-                <label for="feature4">Design</label><br>
+                <label for="feature3">Feature 3</label>
             </div>
 
-            
-            <label for="review">Written Review (Optional):</label>
+            <label for="review">Written Review</label>
             <textarea id="review" name="review"></textarea>
 
-            
-            <label for="username">User Name (Optional):</label>
+            <label for="username">User Name</label>
             <input type="text" id="username" name="username">
 
-            
-            <input type="submit" value="Post Review">
+            <input type="submit" value="Submit Review">
         </form>
     </main>
-
     <footer>
-        <p><span id="currentyear"></span></p>
-        <p id="lastModified"></p>
+        <p>&copy; 2024 Product Reviews</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
