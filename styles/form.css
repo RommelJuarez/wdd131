@@ -40,7 +40,7 @@ main {
     border-radius: 10px;
     box-shadow: var(--box-shadow);
 }
-
+    
 form label {
     display: block;
     margin-bottom: 0.5em;

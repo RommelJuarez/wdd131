@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Nature Comestic - Review</title>
+    <meta name="description" content="Natural comestics online shop">
+    <meta name="author" content="Rommel Juarez">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/Review.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/logo.png" alt="Logo">
+            </a>
+        </div>
+
+
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="Shop.html" id="Shop">Shop</a></li>
+                <li><a href="Review.html" id="sitePlan">Review</a></li>
+
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+
+    <main>
+        <form id="review-form" action="#" method="get">
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <label>Overall Rating:</label>
+            <div id="rating">
+                <label><input type="radio" name="rating" value="1" required> ☆</label>
+                <label><input type="radio" name="rating" value="2"> ☆☆</label>
+                <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+                <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+                <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+            </div>
+
+            <label for="review">Written Review (Optional):</label>
+            <textarea id="review" name="review"></textarea>
+
+            <label for="username">User Name (Optional):</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Post Review">
+        </form>
+
+
+        <div id="success-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Thank You!</h2>
+                <p>Your review has been send successfully.</p>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

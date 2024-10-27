@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Nature Comestic - natural comestics</title>
+    <meta name="description" content="Natural comestics online shop">
+    <meta name="author" content="Rommel Juarez">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/index.css">
+    
+
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/products-index.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/logo.png" alt="Logo">
+            </a>
+        </div>
+
+
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="Shop.html" id="Shop">Shop</a></li>
+                <li><a href="Review.html" id="sitePlan">Review</a></li>
+
+            </ul>
+        </nav>
+        <div class="cart">
+            <button id="cart-btn">
+                <img src="images/bag.png" alt="cart">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-image-container">
+                <img src="images/hero.webp" alt="placeholder" class="fade" loading="eager" width="750" height="500">
+                <h1 class="hero-title">Crafted by Nature, Perfected for You.</h1>
+            </div>
+
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/hero2-small.webp">
+                <img src="images/hero2.webp" alt="hero" class="fade" loading="lazy" width="500" height="300">
+            </picture>
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/hero3-small.webp">
+                <img src="images/hero3.webp" alt="hero" class="fade" loading="lazy" width="500" height="300">
+            </picture>
+
+
+        </div>
+        <div class="divider">
+            <span>🍃</span>
+        </div>
+
+        <h2>Feel Good, Look Natural</h2>
+
+
+        <div class="products-container">
+            <div class="Categories">
+                <h3>Products:</h3>
+                <a href="/Shop.html">Shop</a>
+            </div>
+            <div class="products-gallery">
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+    <div id="cart-modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <button id="clear-cart">Clear Cart</button>
+        </div>
+    </div>
+</body>
+
+</html>
